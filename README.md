@@ -8,7 +8,7 @@ This is an **end-to-end Azure Data Engineering project** that processes and anal
 ```mermaid
 graph TD
     A[CSV Files] --> B[Azure Data Factory]
-    B --> C[Azure Data Lake Gen2 (Bronze)]
+    B --> C[Azure Data Lake Gen 2 (Bronze)]
     C --> D[Azure Databricks]
     D --> E[Data Lake Gen2 (Silver/Gold)]
     E --> F[Power BI Desktop]
