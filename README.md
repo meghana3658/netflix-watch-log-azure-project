@@ -6,10 +6,11 @@ This is an **end-to-end Azure Data Engineering project** that processes and anal
 ## 🚀 Project Architecture
 
 ```mermaid
-graph TD
-    A[CSV Files] --> B[Azure Data Factory]
-    B --> C[Azure Data Lake Gen 2 (Bronze)]
-    C --> D[Azure Databricks]
-    D --> E[Data Lake Gen2 (Silver/Gold)]
-    E --> F[Power BI Desktop]
-# netflix-watch-log-azure-project
+flowchart TD
+    A[Netflix CSV Files]
+    A --> B[Azure Data Factory]
+    B --> C[Azure Data Lake Gen2 - Bronze Layer]
+    C --> D[Azure Databricks - Silver Transformations]
+    D --> E[Azure Data Lake Gen2 - Silver Layer]
+    E --> F[Microsoft Fabric - Power BI Dashboard]
+```
