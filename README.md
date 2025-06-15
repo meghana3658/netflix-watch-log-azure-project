@@ -13,3 +13,4 @@ graph TD
     C --> D[Azure Databricks]
     D --> E[Data Lake Gen2 (Silver/Gold)]
     E --> F[Power BI Desktop]
+# netflix-watch-log-azure-project
